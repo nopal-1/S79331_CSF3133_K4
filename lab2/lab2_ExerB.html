@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+<!-- Error 1 (Line 20): <td>Rating</td> used instead of <th>Rating</th> in header row -->
+<!-- Error 2 (Line 27): colspan="3" on a single <td> swallowed the row's other cells -->
+<!-- Error 3 (Line 31): unclosed <td> tag before the next <td> opened -->
+<!-- Error 4 (Line 38): label for="name" did not match input id="fullname" -->
+<!-- Error 5 (Line 42, 44): the two rating radio buttons had different name attributes, so they weren't grouped -->
+<!-- Error 6 (Line 46-47): checkbox id="lab" did not match label for="labs" -->
+<!-- Error 7 (Line 48): closing form tag misspelled as </from> instead of </form> -->
+<header>
+    <h1>CSF3133 Course Feedback</h1>
+</header>
+
+<nav>
+     <a href="lab2_ExerB_2.html">Feedback Form</a> | <a href="#comments">Comments</a>
+</nav>
+
+<section id="results"><!--result-->
+    <h2>Feedback Summary</h2>
+    <table border="1">
+        <tr>
+            <th>Week</th>
+            <th>Topic</th>
+            <th>Rating</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Introduction to HTML</td>
+            <td>4.5</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Tables and Forms</td>
+            <td>4.0</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Semantic HTML</td>
+            <td>4.0</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td rowspan="2">Mini Project</td> <!--use rowspan="2"-->
+            <td>4.0</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>4.0</td>
+        </tr>
+        <tr>
+            <td colspan="2">average rating</td> <!--use colspan="2"-->
+            <td>4.1</td>
+        </tr>
+    </table>
+</section>
+<footer>
+    <p>Copyright &copy; 2026 CSF3133</p>
+</footer>
+</body>
+</html>

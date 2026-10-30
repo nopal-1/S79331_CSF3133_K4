@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lab 2 Exercise A</title>
+</head>
+<body>
+<header>
+    <h1>UMT Career Day 2026</h1>
+    <p>Connecting Career Path for Students.</p>
+</header>
+<nav>
+        <a href="#schedule">Schedule</a> | <a href="#register">Registration</a> |
+        <a href="#about">About</a>
+</nav>
+<!-- About -->
+<section id="about">
+<h2>About the event</h2>
+    <article>
+        <h3>Speaker: Encik Amin Irfan</h3>
+        <p>Encik Amin Irfan is a Manager in Megah Holding will give insights of what requirement to be employed.</p>
+    </article>
+    <article>
+        <h3>Activity: Career Booths &amp; Networking </h3>
+        <p>30 companies around Malaysia will set up booths for student to explore more about internship and job oppurtunities.</p>
+    </article>
+</section>
+
+<!-- Schedule -->
+<section id="schedule">
+    <h2>Event Schedule:</h2>
+    <table border="1">
+        <tr>
+        <th>Time</th>
+        <th>Activity</th>
+        <th>Venue</th>
+        <th>Person in Charge</th>
+        </tr>
+        <tr>
+        <td>8.00 am</td>
+        <td>Registration</td> <!--activity 1-->
+        <td rowspan="3">Dewan Utama</td> <!--rowspan-->
+        <td>Ahmad Naufal</td>
+        </tr>
+        <tr>
+        <td>8.30 am</td>
+        <td>Opening Ceremony</td> <!--activity 2-->
+        <td>Encik Ehsan</td>
+        </tr>
+        <tr>
+        <td>9.30 am</td>
+        <td>Career Talk</td> <!--activity 3-->
+        <td>Encik Kamal</td>
+        </tr>
+        <tr>
+        <td>11.30 am</td>
+        <td colspan="3">Rehat</td> <!--activity 4 and colspan used-->
+        </tr>
+        <tr>
+        <td>12.00 pm</td>
+        <td>Career booths</td> <!--activity 5-->
+        <td rowspan="3">Dewan Utama</td> <!--rowspan-->
+        <td>Penjaga booths</td>
+        </tr>
+        <tr>
+        <td>1.00 pm</td>
+        <td>Resume &amp; Interviews</td> <!--activity 6-->
+        <td>Company manager</td>
+        </tr>
+        <tr>
+        <td>2.30 pm</td>
+        <td>Lucky Draw &amp; Closing</td> <!--activity 7-->
+        <td>Encik Ehsan</td>
+        </tr>
+    </table>
+</section><br>
+
+<!-- Regitration -->
+<section id="register">
+    <h2>Registration:</h2>
+        <form action="register.html" method="post">
+
+            <!--text input-->
+            <label for="fullname">Full name:</label><br> 
+            <input type="text" id="fullname" name="Full name"><br><br>
+            <label for="matricnum">Matric Number:</label><br>
+            <input type="text" id="matricnum" name="Matric Number"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="Email"><br><br>
+
+            <!--radio button-->
+            <label>Year of Study:</label><br> <!--radio button-->
+            <input type="radio" id="year1" name="Study" value="1">
+            <label for="year1">1</label><br>
+            <input type="radio" id="year2" name="Study" value="2">
+            <label for="year2">2</label><br>
+            <input type="radio" id="year3" name="Study" value="3">
+            <label for="year3">3</label><br>
+            <input type="radio" id="year4" name="Study" value="4">
+            <label for="year4">4</label><br><br>
+
+            <!--checkbox-->
+            <label for="session1">Select sessions:</label><br>
+            <input type="checkbox" id="session1" name="session1" value="Session 1">
+            <label for="session1">8.30 am </label><br>
+            <input type="checkbox" id="session2" name="session2" value="Session 2">
+            <label for="session2"> 9.30 am</label><br>
+            <input type="checkbox" id="session3" name="session3" value="Session 3">
+            <label for="session3"> 12.00 pm</label><br>
+            <input type="checkbox" id="session4" name="session4" value="Session 4">
+            <label for="session4"> 1.00 pm</label><br><br>
+            
+            <!--dropdown list-->
+            <label for="faculty">Choose your faculty:</label>
+            <select id="faculty" name="faculty">
+            <option value="faculty" >Choose faculty</option>
+            <option value="FSKM">FSKM</option>
+            <option value="FPEPS">FPEPS</option>
+            <option value="FSSM">FSSM</option>
+            <option value="FTKKI">FTKKI</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        
+        </form>
+</section>
+<footer>
+    <p>Organised by Student UMT</p>
+    <p>&copy;UMT</p>
+</footer>
+</body>
+</html>

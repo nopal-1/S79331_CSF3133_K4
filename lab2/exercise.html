@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport content="width=device-width,
+	initial-scale=1.0">
+	<title>My First Web Page</title>
+</head>
+<body>
+<header>
+    <h1>My First HTML table and form</h1>
+</header>
 
+<nav>
+    <a href="#home">Home</a> | <a href="#register">Registration</a> |
+    <a href="#contact">Contact</a>
+</nav>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Transportation</th>
+    </tr>
+    <tr>
+        <td>Naufal</td>
+        <td>20</td>
+        <td>Car</td>
+    </tr>
+    <tr>
+        <td>Ammar</td>
+        <td>20</td>
+        <td>Bus</td>
+    </tr>
+    <tr>
+        <td>Muqtashid</td>
+        <td>20</td>
+        <td>Motor</td>
+    </tr>
+</table>
+
+<table border="1">
+    <tr>
+        <th colspan="3">Student Information</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Transportation</td>
+    </tr>
+    <tr>
+        <td>Naufal</td>
+        <td>20</td>
+        <td>Car</td>
+    </tr>
+    <tr>
+        <td>Ammar</td>
+        <td>20</td>
+        <td>Bus</td>
+    </tr>
+    <tr>
+        <td>Muqtashid</td>
+        <td>20</td>
+        <td>Motor</td>
+    </tr>
+</table>
+
+<h2>Registration Form</h2>
+<form action="submit_form.php" method="post">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="firstname"><br><br>
+
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lastname"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="Email"><br><br>
+
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <input type="submit" value="Submit">   
+</form>
+
+<form action="submit_form.php" method="post">
+    <label for="hobby">Select your hobbies:</label><br>
+    <input type="checkbox" id="hobby1" name="hobby1" value="Reading">
+    <label for="hobby1"> Reading</label><br>
+    <input type="checkbox" id="hobby2" name="hobby2" value="Gaming">
+    <label for="hobby2"> Gaming</label><br><br>
+
+    <label for="Transportation">Choose a Transportation:</label>
+    <select id="Transportation" name="Transportation">
+        <option value="car">Car</option>
+        <option value="bus">Bus</option>
+        <option value="motor">Motor</option>
+    </select><br><br>
+
+    <input type="submit" value="Submit">
+</form>    
+<section>
+    <article>
+        <h2>WARNING!!!</h2>
+        <p>Please complete the form.</p>
+    </article>
+</section>
+
+<footer>
+    <p>Copyright ©  2026 My first HTML table</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+<header>
+    <h1>CSF3133 Course Feedback</h1>
+</header>
+
+<nav>
+    <a href="lab2_ExerB.html">Results</a> 
+</nav>
+
+<section id="form">
+    <h2>Give Your Feedback</h2>
+    <form action="submit_feedback.php" method="post">
+        <label for="fullname">Name:</label>
+        <input type="text" id="fullname" name="name"><br>
+
+        <!--new: add email with matching <label>-->
+        <label for="email">E-mail:</label> 
+        <input type="email" id="email" name="email"><br>
+
+        <label>Overall rating:</label><br>
+        <input type="radio" id="good" name="rating" value="good">
+        <label for="good">Good</label><br>
+        <input type="radio" id="poor" name="rating" value="poor">
+        <label for="poor">Poor</label><br>
+        <!--new: add "Average" -->
+        <input type="radio" id="average" name="rating" value="average">
+        <label for="average">Average</label><br>
+
+        <input type="checkbox" id="labs" name="labs" value="yes">
+        <label for="labs">I attended all labs</label><br>
+
+        <!--new: checkboxes for “Topics I want more practice on” -->
+        <p>Topics I want more practice :</p>
+        <input type="checkbox" id="topic-html" name="practice" value="html">
+        <label for="topic-html">HTML</label><br>
+        <input type="checkbox" id="topic-css" name="practice" value="css">
+        <label for="topic-css">CSS</label><br>
+        <input type="checkbox" id="topic-forms" name="practice" value="forms">
+        <label for="topic-forms">Forms</label><br>
+
+        <!--select dropdown for choosing Section -->
+        <label for="section">Section/Group:</label>
+        <select id="section" name="section">
+            <option value="a">Section A</option>
+            <option value="b">Section B</option>
+            <option value="c">Section C</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<!--Student comments-->
+<section id="comments">
+    <h2>Student Comments</h2>
+    <article>
+        <h3>Aiman</h3>
+        <p>The Mini Project week was the best part for me.</p>
+    </article>
+    <article>
+        <h3>Nurul</h3>
+        <p>I would have liked more practice.</p>
+    </article>
+</section>
+
+<footer>
+    <p>Copyright &copy; 2026 CSF3133</p>
+</footer>
+</body>
+</html>
