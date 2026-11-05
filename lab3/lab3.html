@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Form with Calculator</title>
+</head>
+<body>
+
+  <div id="header">
+    <h1>My Contact Page <span>Get in touch anytime</span></h1>
+  </div>
+
+  <div id="content">
+
+    <form action="">
+      Email: <input type="email" name="userEmail" required>
+      <br>
+      Preferred Contact Date: <input type="date" name="contactDate">
+      <br>
+      Satisfaction Level: <input type="range" id="satisfaction" min="0" max="10" step="1" value="5">
+      <br>
+      <input type="submit" value="Send">
+    </form>
+
+    <div id="calculator">
+      <h2>Quick Calculator</h2>
+      <form oninput="result.value = parseInt(num1.value) + parseInt(num2.value)">
+        <input id="num1" type="number" value="0">
+        +
+        <input id="num2" type="number" value="0">
+        =
+        <output name="result" for="num1 num2"></output>
+      </form>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <p>Contact us: info@example.com &copy; 2026 My Website</p>
+  </div>
+
+</body>
+</html>
