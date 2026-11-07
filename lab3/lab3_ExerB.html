@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ticket Booking</title>
+</head>
+<body>
+<!-- Error 1 (Line 1): missing <!DOCTYPE html> declaration at the very top of the file -->
+<!-- Error 2 (Line 9): <span> was opened but never closed before </h1> appeared, so the end tag </h1> is seen while the <span> is still open -->
+<!-- Error 3 (Line 9): <span> tag is missing its closing </span> tag -->
+<!-- Error 4 (Line 9): extra/unexpected </span> found — likely a duplicate closing tag left over after the unclosed <span> above -->
+<!-- Error 5 (Line 12): <h2> is not allowed to be placed inside a <span>, because <span> can only contain inline/phrasing content, not block elements like <h2> -->
+<!-- Error 6 (Line 13): <p> is not allowed to be placed inside a <span>, for the same reason — <span> only allows inline content -->
+<!-- Error 7 (Line 13): raw "<" character used in text was not escaped — must write &lt; instead of < when it's not starting a tag -->
+<!-- Error 8 (Line 13): "&" character used in text (e.g. "students & staff") was not escaped — must write &amp; instead of & -->
+<!-- Error 9 (Line 14): <form> is not allowed to be placed inside a <span>, because <span> only allows inline/phrasing content, not block-level elements like <form> -->
+<!-- Error 10 (Line 25): <option> tag is missing the required "label" attribute value, or the option has no visible text content -->
+<!-- Error 11 (Line 26): stray </datalist> closing tag found with no matching open <datalist> tag before it -->
+<!-- Error 12 (Line 41): stray/unexpected character found after </html>, content must not appear after the closing </html> tag -->
+<!-- Error 13 (Line 22): <input list="movies"> refers to a <datalist id="movies">, but no element with id="movies" exists in the page (id doesn't match) --> 
+<div id="header">
+    <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+</div>
+
+<div id="content">
+    <h2>Book Your Ticket</h2>
+    <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+
+    <form action="booking.php" oninput="total.value = Number(adult.value) + Number(child.value); price.value = (Number(adult.value) * 12) + (Number(child.value) * 8);">
+        
+        <!--name input-->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus><br><br>
+
+        <!--email input-->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!--date-->
+        <label for="date">Show date:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <!--Phone num input-->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 0123456789" required><br><br>
+
+        <!--Customer show time and movie selection-->
+        <label for="showtime">Show Time:</label>
+        <input type="time" id="showtime" name="showtime"><br><br>
+
+        <label for="movie">Movie:</label>
+        <input id="movie" name="movie" list="movies"><br>
+        <datalist id="movies">
+            <option value="Space Rangers">
+            <option value="Kampung Comedy">
+        </datalist><br>
+
+        <label for="adult">Adult tickets(RM12):</label>
+        <input type="number" id="adult" name="adult" value="0"><br>
+
+        <label for="child">Child tickets(RM8):</label>
+        <input type="number" id="child" name="child" value="0"><br>
+
+        <label for="rating">Rate our service:</label>
+        <input type="range" id="rating" name="rating" min="1" max="5"><br>
+
+        Total tickets: <output name="total" for="adult child">0</output><br>
+
+        <!--calculate total: adult*12 + child*8-->
+        Total price (RM): <output name="price" for="adult child">0</output><br>
+
+        <input type="submit" value="Book Now">
+    </form>
+</div>
+
+<!--trailer for now showing movies-->
+<div id="sidebar">
+    <h2>Now Showing</h2>
+    <ul>
+        <li><strong>Space Rangers</strong> &mdash; <span>PG13</span> &mdash; <a href="https://youtu.be/k9cy09BHl94">Watch Trailer</a></li>
+        <li><strong>Kampung Comedy</strong> &mdash; <span>U</span> &mdash; <a href="https://youtu.be/1ectJ9w3KX0">Watch Trailer</a></li>
+        <li><strong>Maze Runner</strong> &mdash; <span>18</span> &mdash; <a href="https://youtu.be/AwwbhhjQ9Xk">Watch Trailer</a></li>
+    </ul>
+</div>
+
+<!--“e-Ticket® – Campus Cinema < RM10 every Tuesday”using the correct entities for ®, < and &.-->
+<div id="footer">
+    <p>e-Ticket&reg; &ndash; Campus Cinema &lt; RM10 every Tuesday</p>
+    <p>&copy; 2026 CineKampus. All rights reserved.</p>
+</div>
+
+</body>
+</html>
