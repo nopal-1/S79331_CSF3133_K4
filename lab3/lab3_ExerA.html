@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab exercise 3 A</title>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Nopal Bakery&reg; <span style="color: green;"> Freshly Baked, Just for You!</span></h1>
+    </div>
+
+    <div id="nav">
+        <a href="#home">home </a>|<a href="#menu"> Menu </a>|<a href="#contact"> contact </a>
+    </div>
+
+    <div id="content">
+        <p>
+            Welcome to <strong>Nopal Bakery</strong>,<em>everything here freshly baked and delicious.</em><br>
+            Checkout our <span style="color:red">breads and cakes</span> at <a href="#menu">Menu</a>
+        </p>
+
+        <h2>Our Specials</h2>
+        <p>We bake bread and cake slices daily using the finest ingredients.</p>
+        <ul>
+            <li>Chocolate Cupcake</li>
+            <li>Vanilla Cupcake</li>
+            <li>Red Velvet Cake Slice</li>
+        </ul>
+        <p>All items are baked fresh every morning.</p>
+
+        <h2>Order Form</h2>
+        <form id="orderForm" oninput="totalOutput.value = (cupcakeQty.value * 3 + sliceQty.value * 5).toFixed(2)">
+
+            <!-- Customer name: text input, placeholder, required, autofocus -->
+            <label for="custName">Name:</label>
+            <input type="text" id="custName" name="custName" placeholder="Enter your full name" required autofocus><br><br>
+
+            <!-- Phone number and e-mail, both required -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 0123456789" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="e.g. nopa@email.com" required><br><br>
+
+            <!-- Pick-up date and time -->
+            <label for="pickupDate">Pick-up Date:</label>
+            <input type="date" id="pickupDate" name="pickupDate"><br><br>
+
+            <label for="pickupTime">Pick-up Time:</label>
+            <input type="time" id="pickupTime" name="pickupTime"><br><br>
+
+            <!-- Flavour linked to a datalist with at least 4 options -->
+            <label for="flavour">Flavour:</label>
+            <input type="text" id="flavour" name="flavour" list="flavourList" placeholder="Choose or type a flavour">
+            <datalist id="flavourList">
+                <option value="Chocolate">
+                <option value="Vanilla">
+                <option value="Red Velvet">
+                <option value="Strawberry">
+            </datalist><br><br>
+
+            <!-- Icing colour and sweetness range slider -->
+            <label for="icingColour">Icing Colour:</label>
+            <input type="color" id="icingColour" name="icingColour"><br><br>
+
+            <label for="sweetness">Sweetness Level:</label>
+            <input type="range" id="sweetness" name="sweetness" min="1" max="5" step="1"><br><br>
+
+            <!-- Price calculator inputs (part of same form, output calculates automatically) -->
+            <h2>Price Calculator</h2>
+            <label for="cupcakeQty">Cupcakes (RM 3.00 each):</label>
+            <input type="number" id="cupcakeQty" name="cupcakeQty" min="0" value="0"><br><br>
+
+            <label for="sliceQty">Cake Slices (RM 5.00 each):</label>
+            <input type="number" id="sliceQty" name="sliceQty" min="0" value="0"><br><br>
+
+            <label for="totalOutput">Total Price (RM):</label>
+            <output name="totalOutput" id="totalOutput" for="cupcakeQty sliceQty">0.00</output><br><br>
+
+            <!-- Submit button -->
+            <button type="submit">Place Order</button>
+
+        </form>
+    </div>
+
+    <div id="sidebar">
+        <h2>Price List</h2>
+        <ul>
+            <li>Nopal bakery&reg; Cupcake &mdash; RM 3.00</li>
+            <li>Cake Slice &mdash; RM 5.00</li>
+            <li>Orders &gt; RM25 get a free drink!</li>
+            <li>Prices changes will be announced.</li>
+        </ul>
+    </div>
+
+    <div id="footer">
+        <p>&nbsp;Nopal Bakery&reg; Bakery &pound;/&euro; prices shown in RM &copy; 2026</p>
+    </div>
+
+</body>
+</html>
