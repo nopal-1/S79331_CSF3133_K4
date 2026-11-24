@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visit Terengganu - Tourism Promotion</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Internal CSS - page-specific rules only */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  .trip-form {
+    background-color: #eaf4e4;
+    padding: 20px;
+    border: 1px solid #98bf21;
+    width: 90%;
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>Visit Terengganu</h1>
+  <p>Discover the beauty of Malaysia's hidden gem</p>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+  <ul>
+    <li><a href="#destinations">Destinations</a></li>
+    <li><a href="#video">Video</a></li>
+    <li><a href="#trip">Trip</a></li>
+  </ul>
+</nav>
+
+<!-- Destinations Section -->
+<section id="destinations">
+  <h2>Our Destinations</h2>
+
+  <article class="card">
+    <h3>Pulau Redang</h3>
+    <p>Crystal clear water and beautiful coral reefs for snorkelling.</p>
+    <p class="price"><span class="old-price">RM 299</span> RM 199</p>
+    <meter min="0" max="40" value="28">28 out of 40 seats filled</meter>
+  </article>
+
+  <article class="card">
+    <h3>Kenyir Lake</h3>
+    <p>The largest man-made lake in South East Asia, surrounded by rainforest.</p>
+    <p class="price"><span class="old-price">RM 250</span> RM 180</p>
+    <meter min="0" max="40" value="20">20 out of 40 seats filled</meter>
+  </article>
+
+  <article class="card">
+    <h3>Crystal Mosque</h3>
+    <p>A stunning mosque made of glass and steel on Wan Man Island.</p>
+    <p class="price"><span class="old-price">RM 100</span> RM 70</p>
+    <meter min="0" max="40" value="15">15 out of 40 seats filled</meter>
+  </article>
+</section>
+
+<!-- Video Section -->
+<section id="video">
+  <h2>Experience Terengganu</h2>
+  <figure>
+    <video width="500" height="300" controls>
+      <source src="Ganu.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <figcaption>A short promotional video of Terengganu's top attractions.</figcaption>
+  </figure>
+</section>
+
+<!-- Trip Interest Form -->
+<section id="trip">
+  <h2>Register Your Interest</h2>
+  <form class="trip-form" action="#" method="post">
+    <!-- Name and Email -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <!-- Traveller type -->
+    <p>Traveller Type:</p>
+    <input type="radio" id="student" name="traveller" value="student">
+    <label for="student">Student</label>
+    <input type="radio" id="staff" name="traveller" value="staff">
+    <label for="staff">Staff</label>
+    <input type="radio" id="public" name="traveller" value="public">
+    <label for="public">Public</label><br><br>
+
+    <!-- Interests -->
+    <p>Interests:</p>
+    <input type="checkbox" id="islands" name="interests" value="islands">
+    <label for="islands">Islands</label>
+    <input type="checkbox" id="food" name="interests" value="food">
+    <label for="food">Food</label>
+    <input type="checkbox" id="culture" name="interests" value="culture">
+    <label for="culture">Culture</label>
+    <input type="checkbox" id="nature" name="interests" value="nature">
+    <label for="nature">Nature</label><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2026 Visit Terengganu Tourism Office. All rights reserved.</p>
+  <address>
+    Contact us: <a href="mailto:info@terengganu.gov.my">info@terengganu.gov.my</a>
+  </address>
+</footer>
+
+</body>
+</html>
