@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab 4 - Responsive Webpage</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+/* internal CSS */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>My Responsive Webpage</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#video">Video</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="home">
+  <article>
+    <h2>Home</h2>
+    <p>Welcome to my responsive webpage built with HTML5 and CSS.</p>
+  </article>
+</section>
+
+<section id="about">
+  <article>
+    <h2>About</h2>
+    <p>This page demonstrates semantic HTML5 elements and CSS styling.</p>
+  </article>
+</section>
+
+<section id="video">
+  <article>
+    <h2>Video</h2>
+    <video width="400" height="300" controls>
+      <source src="sample.mp4" type="video/mp4">
+      <track src="captions.vtt" kind="captions" srclang="en" label="English">
+      Your browser does not support the video tag.
+    </video>
+  </article>
+</section>
+
+<section id="contact">
+  <article>
+    <h2>Contact Form</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br>
+
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+
+      <p>Favorite Hobbies:</p>
+      <input type="checkbox" id="reading" name="hobbies" value="reading">
+      <label for="reading">Reading</label>
+      <input type="checkbox" id="sports" name="hobbies" value="sports">
+      <label for="sports">Sports</label>
+      <input type="checkbox" id="music" name="hobbies" value="music">
+      <label for="music">Music</label><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </article>
+</section>
+
+<footer>
+  <p>&copy; 2026 Lab 4. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
