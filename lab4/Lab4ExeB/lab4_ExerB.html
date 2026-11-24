@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>e-Café Campus</title>
+<link rel="stylesheet" href="cafe.css">
+<style type="text/css">
+  /* Internal CSS - page-specific rules only (navigation bar moved to cafe.css) */
+  h1 {text-decoration: overline;}
+  p {color: #333333; text-align: justify;}
+  #intro {
+    font-size: 18px;
+    background-color: #FDEBD0;
+  }
+  .highlight {
+    font-weight: bold;
+    color: #C0392B;
+  }
+</style>
+</head>
+<body>
+
+<!-- Error 1 (Line 9): invalid value for list-style-type, should be "none" not "no" -->
+<!-- Error 2 (Line 14-15): a:hover and a:visited order reversed, visited should come before hover -->
+<!-- Error 3 (Line 17): invalid value for text-decoration, should be "overline" not "overlined" -->
+<!-- Error 4 (Line 18): p selector missing colon after color -->
+<!-- Error 5 (Line 23): .highlight selector missing the "." in front -->
+<!-- Error 6 (Line 34): href="menu" missing "#" to jump to the section -->
+<!-- Error 7 (Line 42 and 46): two articles share the same id, ids must be unique -->
+<!-- Error 8 (Line 53): invalid video type, should be "video/mp4" -->
+<!-- Error 9: missing meta viewport tag for responsive design -->
+
+<header>
+  <h1>e-Café Campus</h1>
+</header>
+
+<!-- Navigation bar -->
+<nav>
+  <ul>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#video">Video</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#feedback">Feedback</a></li>
+  </ul>
+</nav>
+
+<section id="menu">
+  <h2>Today's Menu</h2>
+  <p id="intro" class="intro">Freshly brewed coffee and local delights every day.</p>
+
+  <!-- menu item -->
+  <article id="item1">
+    <h3>Kopi Tarik</h3>
+    <p class="old-price">RM 4.50</p>
+    <p>Only <span class="highlight">RM 3.50</span></p>
+  </article>
+
+  <article id="item2">
+    <h3>Nasi Lemak</h3>
+    <p class="old-price">RM 6.00</p>
+    <p>Only <span class="highlight">RM 5.00</span></p>
+  </article>
+</section>
+
+<!-- Video section -->
+<section id="video">
+  <h2>Watch Our Story</h2>
+  <figure>
+    <video width="400" height="300" controls>
+      <source src="cafe.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <figcaption>A short look behind the counter at e-Café Campus.</figcaption>
+  </figure>
+</section>
+
+<!-- Feedback section -->
+<section id="feedback">
+  <h2>Tell Us What You Think</h2>
+  <form class="feedback-form" action="#" method="post">
+    <label for="fname">Name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <label for="femail">E-mail:</label>
+    <input type="email" id="femail" name="femail"><br><br>
+
+    <p>Visit Type:</p>
+    <input type="radio" id="dinein" name="visittype" value="dinein">
+    <label for="dinein">Dine-in</label>
+    <input type="radio" id="takeaway" name="visittype" value="takeaway">
+    <label for="takeaway">Take-away</label><br><br>
+
+    <p>Favourite Items:</p>
+    <input type="checkbox" id="kopi" name="favourites" value="kopi">
+    <label for="kopi">Kopi Tarik</label>
+    <input type="checkbox" id="nasilemak" name="favourites" value="nasilemak">
+    <label for="nasilemak">Nasi Lemak</label>
+    <input type="checkbox" id="pastry" name="favourites" value="pastry">
+    <label for="pastry">Pastry</label>
+    <input type="checkbox" id="tea" name="favourites" value="tea">
+    <label for="tea">Teh Tarik</label><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</section>
+
+<footer id="contact">
+  <p>&copy; 2026 e-Café Campus</p>
+  <address>
+    Contact us: <a href="mailto:ecafe@umt.edu.my">ecafe@umt.edu.my</a>
+  </address>
+</footer>
+
+</body>
+</html>

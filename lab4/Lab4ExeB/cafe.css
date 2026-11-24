@@ -1,0 +1,79 @@
+/* Navigation bar */
+nav ul {
+  list-style-type: none;   /* removes bullet points */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f8f8f8;
+}
+
+header h1{
+  text-decoration: underline;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 16px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #036500;
+}
+
+/* Link states kept in correct order */
+nav ul li a:link {
+  color: #90ffc7;
+}
+
+nav ul li a:visited {
+  color: #D6EAF8;
+}
+
+nav ul li a:hover {
+  background-color: #E67E22;
+}
+
+nav ul li a:active {
+  color: #C0392B;
+}
+
+/* Menu items */
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Video section */
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 6px;
+}
+
+/* Feedback form */
+.feedback-form {
+  background-color: #FDEBD0;
+  padding: 15px;
+  border: 1px solid #1A5276;
+  width: 90%;
+}
+
+/*  Footer  */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+}
+
+footer a {
+  color: #E67E22;
+}
